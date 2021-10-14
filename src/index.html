@@ -21,6 +21,23 @@
         }).then(res => {
             console.log('data', res);
         })
+
+
+        // request({
+        //     url: '/goods/list'
+        // }).then(res => {
+        //     console.log('data', res);
+        // })
+
+        $.get('http://localhost:5200/proxy/offer/api/iq/today', function (res) {
+            console.log('后端代理数据：', res)
+        })
+
+        // request({
+        //     url: 'proxy/offer/api/iq/today'
+        // }).then(res => {
+        //     console.log('data111', res);
+        // })
     </script>
 
 </body>

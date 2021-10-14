@@ -20,5 +20,8 @@
     "gulp-uglify": "^3.0.2",
     "mysql": "^2.18.1",
     "sass": "^1.43.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.1"
   }
 }
