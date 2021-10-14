@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
 </head>
+
 <body>
     <h2>首页</h2>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/jquery-3.1.1.js"></script>
+    <script src="./js/request.js"></script>
+
+    <script>
+        request({
+            url: '/user/list'
+        }).then(res => {
+            console.log('data', res);
+        })
+    </script>
+
 </body>
+
 </html>

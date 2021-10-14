@@ -4,9 +4,9 @@ const mysql = require('mysql')
 const pool  = mysql.createPool({
     host     : 'localhost',
     user     : 'root',
-    password : 'root',
+    password : 'long',
     // port: 3306,
-    database: 'h52108',
+    database: 'user',
 
     // 允许每个mysql语句有多条查询（默认false）.使用它时要非常注意，因为它很容易引起sql注入攻击
     // multipleStatements: true
